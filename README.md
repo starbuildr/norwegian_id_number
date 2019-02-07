@@ -43,7 +43,7 @@ Add `norwegian_id_number` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:norwegian_id_number, "~> 0.1.0"}
+    {:norwegian_id_number, "~> 0.1"}
   ]
 end
 ```

@@ -4,7 +4,7 @@ defmodule NorwegianIdNumber.MixProject do
   def project do
     [
       app: :norwegian_id_number,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.6",
       description: "Elixir library to parse and validate Norwegian national identification numbers",
       docs: [extras: ["README.md"]],
