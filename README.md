@@ -8,9 +8,9 @@ We also don't check if the age derived from a number makes sense.
 
 ## Usage
 
-Parsing: `NorwegianIdNumber.parse("81234567802") === {:ok, %NorwegianIdNumber{}}`
-Validation: `NorwegianIdNumber.is_valid?("81234567802") === true`
-Rendering: `NorwegianIdNumber.render("01415612385") === "01.01.1956 - 12385"`
+* Parsing: `NorwegianIdNumber.parse("81234567802") === {:ok, %NorwegianIdNumber{}}`
+* Validation: `NorwegianIdNumber.is_valid?("81234567802") === true`
+* Rendering: `NorwegianIdNumber.render("01415612385") === "01.01.1956 - 12385"`
 
 ## Installation
 
