@@ -82,9 +82,14 @@ defmodule NorwegianIdNumberTest do
   end
 
   describe "Rendering" do
-    test "raw" do
+    test "pretty" do
       assert NorwegianIdNumber.render("42059199212") === "02.05.1991 - 99212"
       assert NorwegianIdNumber.render("01415612385") === "01.01.1956 - 12385"
+    end
+
+    test "birthdate" do
+      assert NorwegianIdNumber.render("42059199212", :birthdate) === "02.05.1991"
+      assert NorwegianIdNumber.render("01415612385", :birthdate) === "01.01.1956"
     end
   end
 end

@@ -26,6 +26,8 @@ defmodule NorwegianIdNumber do
     case render_mode do
       :pretty ->
         NorwegianIdNumber.Formatter.pretty(parsed_number)
+      :birthdate ->
+        NorwegianIdNumber.Formatter.birthdate(parsed_number)
       _ ->
         NorwegianIdNumber.Formatter.default(parsed_number)
     end
